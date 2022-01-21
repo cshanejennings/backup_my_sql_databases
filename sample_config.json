@@ -1,0 +1,20 @@
+{
+  "TEMP_PATH": "./",
+  "BACKUP_PATH": "./",
+  "databases": [{
+      "host": "localhost",
+      "user": "root",
+      "password": "",
+      "database": "unprotectedexample"
+    }, {
+      "host": "localhost",
+      "user": "my_user",
+      "password": "9f32h8t984t4",
+      "database": "userprotected_prod"
+    }, {
+      "host": "localhost",
+      "user": "my_user",
+      "password": "9f32h8t984t",
+      "database": "userprotected_sandbox"
+    }]
+}
