@@ -1,3 +1,5 @@
+// node cli.js -backup_path='C:\backups\' -database=exampledatabasename
+
 const args = process.argv.slice(2).reduce((config, arg) => {
   const parts = arg.slice(1).split('=');
   return {...config, [parts[0]]: parts[1]}
