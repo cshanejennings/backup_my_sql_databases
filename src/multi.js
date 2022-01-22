@@ -3,11 +3,11 @@ const mysqldump = require('mysqldump');
 const {gzip, ungzip} = require('node-gzip');
 const path = require('path');
 
+const config_path = path.join(__dirname, '../', 'config.json');
+
 const get_config = () => {
   try {
-    const json = JSON.parse(fs.readFileSync('../config.json'));
-    console.log(json);
-    return json;
+    return JSON.parse(fs.readFileSync(config_path));
   } catch (e) { return {
       TEMP_PATH: './',
       BACKUP_PATH: './',
